@@ -36,7 +36,7 @@
                     html,
                     body {
                         font-family: 'Cera Pro';
-                      overflow: hidden;
+                      
                     }
                     
                     .chb,
@@ -2825,6 +2825,9 @@
                         .li-burger2,
                         .li-burger3,
                         .li-burger4 {
+                            display: none;
+                        }
+                      .a-vesi-h {
                             display: none;
                         }
                         .header-bottom {
