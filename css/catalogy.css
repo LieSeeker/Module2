@@ -50,6 +50,7 @@ label.remember {
 }
 
 .header-bottom {
+    z-index: 10;
     padding: 0 60px 8px 60px;
     border-bottom: 1px solid #E0E0DD;
     background: white;
@@ -60,7 +61,6 @@ label.remember {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1;
     box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
 }
 
@@ -438,10 +438,6 @@ li {
     gap: 20px;
     width: auto;
     height: auto;
-}
-
-.box-arrow1 {
-    display: none;
 }
 
 
@@ -1555,12 +1551,17 @@ footer {
     height: 94px;
 }
 
-.footer-bottom1 {
+.footer-bottom1,
+.footer-bottom2 {
     display: block;
     height: 94px;
     width: 100%;
     margin-top: 50px;
     margin-left: 70px;
+}
+
+.footer-bottom2 {
+    display: none;
 }
 
 .footer-bottom span {
@@ -1749,11 +1750,10 @@ footer {
 
 .footer-burger-menu {
     display: grid;
-    -ms-grid-columns: 1fr 2fr 1fr;
+    position: relative;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 92px;
-    padding-right: 83px;
-    align-items: center;
+    height: 220px;
 }
 
 .box-left-items {
@@ -1765,9 +1765,11 @@ footer {
     font-family: 'Cera Pro';
     font-style: normal;
     font-weight: 500;
+    padding-top: 50px;
+    padding-left: 92px;
     font-size: 28px;
+    height: 64px;
     line-height: 34px;
-    margin-right: 270px;
 }
 
 .btn-podrobnee {
@@ -1783,7 +1785,7 @@ footer {
 .burger-menu-right {
     display: block;
     width: 380px;
-    padding-left: 120px;
+    padding: 57px 83px 57px 201px;
 }
 
 .text-menu-right {
@@ -2365,7 +2367,7 @@ input.number-input2 {
 
 @media screen and (max-width: 1900px) {
     .women-img {
-        padding-left: 50px;
+        padding-left: 100px;
     }
     .footer-bottom1 {
         margin-left: 100px;
@@ -2423,7 +2425,7 @@ input.number-input2 {
         margin-right: 0;
     }
     .text-menu-left {
-        width: 350px;
+        width: 400px;
         font-size: 26px;
     }
     .women-img {
@@ -2461,7 +2463,7 @@ input.number-input2 {
         width: 150px;
     }
     .text-menu-left {
-        width: 250px;
+        width: 350px;
         font-size: 22px;
     }
     .one-block-burger {
@@ -2472,6 +2474,12 @@ input.number-input2 {
 @media screen and (max-width: 1440px) {
     .burger-menu-left {
         width: 250px;
+    }
+    .text-menu-left {
+        padding-left: 60px;
+    }
+    .box-btn-podrobnee {
+        left: 50px;
     }
 }
 
@@ -2499,8 +2507,14 @@ input.number-input2 {
         gap: 63px;
     }
     .footer-burger-menu {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-menu-left {
+        padding-left: 50px;
+    }
+    .women-img {
+        padding-left: 0;
     }
     .ff-block-burger {
         width: 200px;
@@ -2513,12 +2527,27 @@ input.number-input2 {
     }
 }
 
+@media screen and (max-width: 1290px) {
+    .text-menu-left {
+        width: 280px;
+        font-size: 19px;
+        padding-left: 30px;
+        line-height: 28px;
+    }
+    .box-btn-podrobnee {
+        padding-left: 30px;
+    }
+}
+
 @media screen and (max-width: 1248px) {
     .container-hd {
         gap: 30px;
     }
     .header-logo {
         padding-right: 30px;
+    }
+    .text-menu-right {
+        gap: 20px;
     }
     .menu-item {
         padding: 0 20px 0 0;
@@ -2539,7 +2568,7 @@ input.number-input2 {
         font-size: 17px;
     }
     .burger-menu-right {
-        width: 200px;
+        width: 230px;
     }
 }
 
@@ -2549,6 +2578,9 @@ input.number-input2 {
     }
     .footer-bottom-btn1 {
         margin-left: 0;
+    }
+    .bg-burger-menu {
+        margin-left: -70px;
     }
 }
 
@@ -2584,7 +2616,7 @@ input.number-input2 {
         width: 200px;
     }
     .text-menu-left {
-        width: 150px;
+        width: 200px;
         font-size: 16px;
     }
     .burger-text {
@@ -2625,16 +2657,27 @@ input.number-input2 {
     .burger-menu-left {
         width: 145px;
     }
+    .text-menu-left {
+        width: 170px;
+        font-size: 14px;
+    }
+    .burger-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .burger-menu-right {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .box-burger-mob {
         display: flex;
     }
-    .img-vector {
+    .box-arrow1 {
         display: flex;
     }
-    .box-arrow1 {   
+    .img-vector {
         display: flex;
     }
     .box-left-items {
@@ -2655,7 +2698,7 @@ input.number-input2 {
     }
     .navigation-container {
         display: block;
-        margin-top: 130px;
+        margin-top: 70px;
         margin-left: 0;
     }
     .one-block-burger,
@@ -2666,6 +2709,10 @@ input.number-input2 {
         width: auto;
         border-bottom: 1px solid #E0E0DD;
         margin-top: 40px;
+    }
+    .logo-img2 {
+        display: block;
+        margin-top: 22px;
     }
     .women-img {
         display: none;
@@ -2679,30 +2726,54 @@ input.number-input2 {
     }
     .bg-burger-menu {
         text-align: center;
+        width: 344px;
+        margin-left: 120px;
     }
     .footer-burger-menu {
+        height: 462px;
         padding-left: 0;
         padding-right: 0;
+        grid-template-columns: none;
         display: grid;
-        grid-template: inherit;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     .burger-menu-right {
         order: 2;
-        margin-top: 40px;
+        margin-top: 0;
         width: auto;
+        padding-left: 21px;
+        padding-top: 57px;
     }
     .box-btn-podrobnee {
+        height: 44px;
+        width: 300px;
+        top: 360px;
+        left: 21px;
+        position: absolute;
         order: 3;
-        width: 180px;
-        width: auto;
+        padding-left: 0;
+    }
+    .btn-podrobnee {
+        width: 300px;
+    }
+    .menu__box {
+        height: 1250px;
     }
     .text-menu-left {
-        width: auto;
-        font-size: 20px;
-        margin-right: 0;
+        order: 1;
+        padding-left: 21px;
+        margin: 0;
+        width: 300px;
+        font-size: 24px;
     }
     .text-burger {
         padding-left: 30px;
+    }
+    .footer-bottom2 {
+        display: block;
+        height: auto;
+        width: 200px;
+        margin: 47px 200px 78px 200px;
     }
     .menu-item {
         padding: 0;
@@ -2830,7 +2901,7 @@ input.number-input2 {
         padding-bottom: 15px;
     }
     .boast .note {
-        margin-top: 12px
+        margin-top: 12px;
     }
 }
 
