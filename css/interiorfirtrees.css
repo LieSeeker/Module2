@@ -906,6 +906,9 @@ ul.breadcrumb li a {
     padding-top: 10px;
     padding-right: 20px;
 }
+.box-arrow1 {
+    display: none;
+}
 
 .btn-right a {
     height: 40px;
@@ -3107,6 +3110,9 @@ input.number-input2 {
         display: flex;
     }
     .img-vector {
+        display: flex;
+    }
+    .box-arrow1 {
         display: flex;
     }
     .box-left-items {
