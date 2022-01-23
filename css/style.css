@@ -414,6 +414,9 @@
                     .header-logo {
                         padding-right: 71px;
                     }
+                    .box-arrow1 {
+                        display: none;
+                    }
                     
                     .btn-right {
                         display: flex;
@@ -2622,6 +2625,9 @@
                             display: flex;
                         }
                         .img-vector {
+                            display: flex;
+                        }
+                      .box-arrow1 {
                             display: flex;
                         }
                         .box-left-items {
