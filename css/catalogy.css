@@ -440,6 +440,10 @@ li {
     height: auto;
 }
 
+.box-arrow1 {
+    display: none;
+}
+
 
 /* 
 .search {
@@ -2628,6 +2632,9 @@ input.number-input2 {
         display: flex;
     }
     .img-vector {
+        display: flex;
+    }
+    .box-arrow1 {   
         display: flex;
     }
     .box-left-items {
